@@ -22,7 +22,7 @@ public final class ModRenderTypes {
     public static final RenderPipeline TEXT_BACKGROUND_PIPELINE = RenderPipeline.builder(RenderPipelines.GLOBALS_SNIPPET)
             .withBindGroupLayout(BindGroupLayouts.MATRICES_PROJECTION)
             .withBindGroupLayout(BindGroupLayouts.FOG)
-            .withLocation("pipeline/text_background")
+            .withLocation(HealthBars.id("pipeline/text_background"))
             .withVertexShader("core/text_background")
             .withFragmentShader("core/text_background")
             .withColorTargetState(new ColorTargetState(BlendFunction.TRANSLUCENT))
